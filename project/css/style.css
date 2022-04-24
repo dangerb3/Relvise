@@ -1,0 +1,70 @@
+* {
+    padding:0;
+    margin: 0;
+    border: 0;
+}
+
+*,*:before,*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus, :active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav, footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor:pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+
+.example-block {
+    padding: 10px 20px 30px 5px; /* top right bottom left */
+    padding: 10px 20px 5px; /* top right-left bottom */
+    padding: 10px 20px; /* top-bottom  right-left*/
+    padding: 10px; /* same of all */
+    padding: 10%; /* dynamic padding */
+    padding: 0px;
+
+    margin: 10px 20px 30px 5px;
+    margin: 10px -10px; /* can be negative */
+    margin: 0;
+
+    width: 500px;
+
+    border: 1px solid #000; /* bd */
+}
+
+.example-string {
+    /* it not working for string blocks */
+    /* padding: 20px; p20 */
+    /* border: 1px solid #000; bd */
+
+    /* also not working */
+    /* margin: 10px -10px;  */
+
+    /* also not working */
+    /* width: 500px; */
+}
+.example-image { 
+    /* у некоторых строчный тегов, таких как img, работает */
+    width: 100px;
+}
